@@ -16,14 +16,29 @@ import com.android.www.bannerviewpaper.R;
 
 public class BannerViewPaper extends FrameLayout implements ViewPager.OnPageChangeListener{
 
+    /**
+     * 所有的总数   为了无限滑动
+     */
     private int totalCount = Integer.MAX_VALUE;
 
+    /**
+     * 显示的数目
+     */
     private int showCount;
 
+    /**
+     * 当前显示为位置
+     */
     private int currentPosition = 0;
 
+    /**
+     * 点的宽度
+     */
     private int indicatorWidth;
 
+    /**
+     * 轮播间隔时间
+     */
     private int intervalTime = 5000;
 
     private boolean isUserTouched = false;
